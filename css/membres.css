@@ -1,0 +1,1402 @@
+html{
+  font-family: 'SF Pro Display', sans-serif;
+}
+body{
+  margin: 0;
+  
+}
+
+header{
+  position: relative;
+  width: auto;
+  background-color: #000000;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.menucase {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2em;
+  justify-content: center;
+}
+
+.menucase a{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.logo {
+  size-adjust: inherit;
+  width: 13%;
+  background-image: url("/img/LabIsenV2.png");
+  background-size: cover;
+  background-color: white;
+}
+
+.drop-contenu{
+  justify-content: center;
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 1em;
+  z-index: 1;
+}
+
+.drop-contenu a{
+  justify-content: center;
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+  display: block;
+}
+
+.drop-contenu a:hover {background-color: #504f4f;}
+
+.déroulant:hover .drop-contenu {
+  display: grid;
+}
+
+
+
+footer{
+  margin-top: 25em;
+  position: relative;
+  bottom: 0;
+  background-color: #FBBB04;
+  
+
+}
+.pied {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 5%;
+  align-items: center;
+  color: black;
+}
+
+.casepied {
+  justify-content: center;
+  text-align: center;
+  font-size: 1em;
+
+}
+
+.auteurs {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10em;
+  align-items: center;
+  color: black;
+}
+
+.auteurs a{
+  text-decoration: none;
+  color: black;
+  display: block;
+} 
+.edit-btn {
+  float : right ;
+  background-color: #FBBB04;
+  color: black;
+  border: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.caseauteurs {
+  text-align: center;
+  font-size: 1em;
+}
+
+.auteursimg{
+  max-width: 100%;
+  height: auto;
+  filter: invert(100%);
+}
+
+.separateur{
+  border: none; 
+  border-top: 1px solid #000; 
+}
+
+@media screen and (max-width: 767px) {
+  .menu{
+      flex-direction: column;
+      
+  }
+  .drop-contenu{
+      position: relative;
+      background-color: #2c2b2b;
+  }
+  .drop-contenu a:hover {background-color: #686666;}
+  
+  .logo{
+      width: 30%;
+  }
+  .menucase{
+      margin: 2%;
+      display: none;
+  }
+  .menu:hover .menucase{
+      display: flex;
+  }
+  .pied{
+      margin-right: 0;
+      margin-left: 0;
+  }
+}
+
+.menucase a:hover {
+  background-color: #686666;
+}
+
+.déroulant:hover{
+  background-color: #686666;
+}
+
+/* FIN BASE */
+
+.main{
+  display: block;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+.membres {
+  width: 100%;
+  height: 3353px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+/* Footer  */
+.footer {
+  top: 3233px;
+  left: -6px;
+  width: 1453px;
+  height: 120px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(251, 187, 4, 1);
+}
+.txtRO {
+  top: 68px;
+  left: 632px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ligneRO {
+  top: 62px;
+  left: 0px;
+  width: 1451px;
+  height: 1px;
+  position: absolute;
+}
+.txtNTS {
+  color: rgba(0, 0, 0, 1);
+  width: 290px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtBST {
+  top: 2px;
+  left: 581px;
+  color: rgba(0, 0, 0, 1);
+  width: 290px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtRNE {
+  top: 2px;
+  left: 290px;
+  color: rgba(0, 0, 0, 1);
+  width: 290px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtCAN {
+  top: 2px;
+  left: 868px;
+  color: rgba(0, 0, 0, 1);
+  width: 290px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtMRC {
+  top: 2px;
+  left: 1161px;
+  color: rgba(0, 0, 0, 1);
+  width: 290px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtTM {
+  top: 68px;
+  left: 87px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.grpTM {
+  top: 86px;
+  left: 129px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.grpRO {
+  top: 86px;
+  left: 714px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.grpMD {
+  top: 86px;
+  left: 1299px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.txtMD {
+  top: 68px;
+  left: 1253px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+/* fin footer */
+/* rec carte */
+.rectangle {
+  top: 250px;
+  left: 78px;
+  width: 1287px;
+  height: 2893px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.recSa {
+  top: 1988px;
+  left: 712px;
+  width: 575px;
+  height: 905px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 16px;
+}
+.recDj {
+  top: 1988px;
+  left: 0px;
+  width: 575px;
+  height: 905px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 16px;
+}
+.recSal {
+  top: 994px;
+  left: 712px;
+  width: 575px;
+  height: 905px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 16px;
+}
+.recSy {
+  top: 994px;
+  left: 2px;
+  width: 575px;
+  height: 905px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 16px;
+}
+.recMh {
+  top: 0px;
+  left: 712px;
+  width: 575px;
+  height: 905px;
+  position: absolute;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 16px;
+}
+.recAy {
+  top: 0px;
+  left: 2px;
+  width: 575px;
+  height: 905px;
+  position: relative;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 16px;
+  z-index: 1;
+}
+/* début carte */
+.carte {
+  top: 271px;
+  left: 81px;
+  width: 1267px;
+  height: 2722px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+/* début carte salima */
+.carteSA {
+  top: 1988px;
+  left: 712px;
+  width: 555px;
+  height: 650px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.txtSA {
+  top: 247px;
+  left: 54px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txt2SA {
+  top: 363px;
+  color: rgba(150, 147, 147, 1);
+  width: 555px;
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.imgSA {
+  top: 0px;
+  left: 164px;
+  width: 216px;
+  height: 216px;
+  position: absolute;
+  border-radius: 150px;
+}
+
+.ligneSA {
+  top: 650px;
+  left: 55px;
+  width: 474px;
+  height: 1px;
+  position: absolute;
+}
+/* fin carte salima */
+/* début carte jamel */
+.carteDJ {
+  top: 1988px;
+  left: 0px;
+  width: 555px;
+  height: 734px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.txtDJ {
+  top: 247px;
+  left: 27px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txt2DJ {
+  top: 363px;
+  color: rgba(150, 147, 147, 1);
+  width: 555px;
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.imgDJ {
+  top: 0px;
+  left: 164px;
+  width: 216px;
+  height: 216px;
+  position: absolute;
+  border-radius: 150px;
+}
+
+.ligneDJ {
+  top: 734px;
+  left: 55px;
+  width: 474px;
+  height: 1px;
+  position: absolute;
+}
+/* fin carte djamel */
+/* début carte 2 salima */
+.carteSA2 {
+  top: 994px;
+  left: 712px;
+  width: 555px;
+  height: 650px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.txtSA2 {
+  top: 296px;
+  left: 158px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txt2SA2 {
+  top: 363px;
+  color: rgba(150, 147, 147, 1);
+  width: 555px;
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.imgSA2 {
+  top: 0px;
+  left: 164px;
+  width: 216px;
+  height: 216px;
+  position: absolute;
+  border-radius: 150px;
+}
+
+.ligneSA2 {
+  top: 650px;
+  left: 55px;
+  width: 474px;
+  height: 1px;
+  position: absolute;
+}
+/* fin carte 2 salima  */
+/* début carte sylvain */
+.carteSY {
+  top: 994px;
+  left: 9px;
+  width: 555px;
+  height: 651.9998779296875px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.txtSY {
+  top: 296px;
+  left: 137px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txt2SY {
+  top: 403px;
+  color: rgba(150, 147, 147, 1);
+  width: 555px;
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.imgSY {
+  top: 0px;
+  left: 148px;
+  width: 216px;
+  height: 216px;
+  position: absolute;
+  border-radius: 150px;
+}
+
+.ligneSY {
+  top: 651.9998779296875px;
+  left: 47.99794387817383px;
+  width: 474px;
+  height: 1px;
+  position: absolute;
+}
+/* fin carte sylvain */
+.carteMH{
+  top: 0px;
+  left: 712px;
+  width: 555px;
+  height: 841px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  z-index: 1;
+}
+.txtMH {
+  top: 296px;
+  left: 189px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txt2MH {
+  top: 363px;
+  color: rgba(150, 147, 147, 1);
+  width: 555px;
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.imgMH {
+  top: 0px;
+  left: 164px;
+  width: 216px;
+  height: 216px;
+  position: absolute;
+  border-radius: 150px;
+}
+.logoGLO {
+  top: 535px;
+  left: 134px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.logoGOO {
+  top: 535px;
+  left: 213px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.logoRG {
+  top: 535px;
+  left: 371px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.logoLI {
+  top: 535px;
+  left: 292px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.ligneMH {
+  top: 507px;
+  left: 55px;
+  width: 474px;
+  height: 1px;
+  position: absolute;
+}
+.HPEC {
+  top: 647px;
+  left: 31px;
+  width: 499px;
+  height: 35px;
+  position: absolute;
+  border-radius: 15px;
+}
+.IoMT {
+  top: 752px;
+  left: 356px;
+  width: 87px;
+  height: 35px;
+  position: absolute;
+  border-radius: 15px;
+}
+.DVD {
+  top: 752px;
+  left: 95px;
+  width: 233px;
+  height: 35px;
+  position: absolute;
+  border-radius: 15px;
+}
+.IIoT {
+  top: 806px;
+  left: 233px;
+  width: 192px;
+  height: 35px;
+  position: absolute;
+  border-radius: 15px;
+}
+.IoT {
+  top: 806px;
+  left: 129px;
+  width: 84px;
+  height: 35px;
+  position: absolute;
+  border-radius: 15px;
+}
+.txtHPEC {
+  top: 649px;
+  left: 37px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtIIoT {
+  top: 808px;
+  left: 255px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtIoMT {
+  top: 754px;
+  left: 369px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtDVD {
+  top: 754px;
+  left: 101px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.AAC {
+  top: 698px;
+  left: 72px;
+  width: 410px;
+  height: 35px;
+  position: absolute;
+  border-radius: 15px;
+}
+.txtAAC {
+  top: 700px;
+  left: 76px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtIoT {
+  top: 808px;
+  left: 153px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+/* fin carte Maher */
+/* début carte Ayoub */
+.carteAY {
+  top: 0px;
+  left: 2px;
+  width: 555px;
+  height: 796px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.txtAY {
+  top: 296px;
+  left: 172px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  z-index: 2;
+}
+.txt2AY {
+  top: 363px;
+  color: rgba(150, 147, 147, 1);
+  width: 555px;
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  z-index: 2;
+}
+.imgAY {
+  top: 0px;
+  left: 164px;
+  width: 216px;
+  height: 216px;
+  position: absolute;
+  border-radius: 150px;
+  z-index: 2;
+}
+.AYglo {
+  top: 535px;
+  left: 134px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 2;
+}
+.AYgoo {
+  top: 535px;
+  left: 213px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 2;
+}
+.AYrg {
+  top: 535px;
+  left: 371px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 2;
+}
+.AYli {
+  top: 535px;
+  left: 292px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 2;
+}
+.ligneAY {
+  top: 507px;
+  left: 55px;
+  width: 474px;
+  height: 1px;
+  position: absolute;
+  z-index: 2;
+}
+.IP {
+  top: 647px;
+  left: 31px;
+  width: 223px;
+  height: 35px;
+  position: absolute;
+  border-radius: 15px;
+  z-index: 2;
+}
+.RS {
+  top: 704px;
+  left: 277px;
+  width: 223px;
+  height: 35px;
+  position: absolute;
+  border-radius: 15px;
+  z-index: 2;
+}
+.ML {
+  top: 647px;
+  left: 277px;
+  width: 223px;
+  height: 35px;
+  position: absolute;
+  border-radius: 15px;
+  z-index: 2;
+}
+.CV {
+  top: 761px;
+  left: 159px;
+  width: 223px;
+  height: 35px;
+  position: absolute;
+  border-radius: 15px;
+  z-index: 2;
+}
+.DL {
+  top: 704px;
+  left: 31px;
+  width: 223px;
+  height: 35px;
+  position: absolute;
+  border-radius: 15px;
+  z-index: 2;
+}
+.txtIP {
+  top: 647px;
+  left: 37px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  z-index: 2;
+}
+.txtCP {
+  top: 763px;
+  left: 172px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  z-index: 2;
+}
+.txtRM {
+  top: 706px;
+  left: 292px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  z-index: 2;
+}
+.txtML {
+  top: 647px;
+  left: 283px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  z-index: 2;
+}
+.txtDL {
+  top: 706px;
+  left: 56px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  z-index: 2;
+}
+/* fin ayoub */
+/* début statut */
+.group {
+  top: 188px;
+  left: 80px;
+  width: 1277px;
+  height: 2033px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.txtST {
+  top: 1995px;
+  left: 922px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtPD {
+  top: 1001px;
+  left: 202px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtECP {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtECP2 {
+  left: 717px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtDA {
+  top: 1001px;
+  left: 870px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtAD {
+  top: 1995px;
+  left: 134px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+/* fin statut */
+
+/* Header */
+.header {
+  top: 0px;
+  left: 0px;
+  width: 1453px;
+  height: 145px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.top {
+  top: 0px;
+  left: 304px;
+  width: 1149px;
+  height: 135px;
+  position: absolute;
+}
+.lab-isen-v21 {
+  top: 0px;
+  left: 0px;
+  width: 311px;
+  height: 145px;
+  position: absolute;
+}
+.TxtAcc {
+  top: 72px;
+  left: 308px;
+  color: rgba(255, 255, 255, 1);
+  width: 155px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtrec {
+  top: 72px;
+  left: 448px;
+  color: rgba(255, 255, 255, 1);
+  width: 155px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtmem {
+  top: 72px;
+  left: 606px;
+  color: rgba(255, 255, 255, 1);
+  width: 155px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtpro {
+  top: 72px;
+  left: 749px;
+  color: rgba(255, 255, 255, 1);
+  width: 155px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtpub {
+  top: 72px;
+  left: 904px;
+  color: rgba(255, 255, 255, 1);
+  width: 155px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtpar {
+  top: 72px;
+  left: 1077px;
+  color: rgba(255, 255, 255, 1);
+  width: 155px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.txtinfo {
+  top: 59px;
+  left: 1235px;
+  color: rgba(255, 255, 255, 1);
+  width: 155px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.logoinfo {
+  top: 22px;
+  left: 1291px;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+}
+.logoacc {
+  top: 30px;
+  left: 367px;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+}
+.logorec {
+  top: 30px;
+  left: 507px;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+}
+.logomem {
+  top: 30px;
+  left: 665px;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+}
+.logopro {
+  top: 30px;
+  left: 808px;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+}
+.logopub {
+  top: 30px;
+  left: 963px;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+}
+.logopar {
+  top: 30px;
+  left: 1136px;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+}
+/* fin header */

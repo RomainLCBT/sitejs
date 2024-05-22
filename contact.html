@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacts</title>
+        <link href="css/contact.css" rel="stylesheet">
+        <script src="js/all.js"defer></script>
+        <script src="js/contact.js"defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <img src="img/LabIsenV2.png" alt="logo" class="logo">
+                <div class="menucase"><a href="accueil.html"><img src="img/icons/accueil.png"><br><span>Accueil</span></a></div>
+                <div class="menucase"> 
+                    <div class="déroulant">
+                            <img src="img/icons/recherche.png"><br><span>Recherches</span><br><img src="img/icons/bas.png">
+                            <div class="drop-contenu">
+                                <a href="plateforme_technologique.html">Plateformes Technologiques</a>
+                                <a href="Thematique_recherche.html">Thématiques de Recherches</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menucase"><a href="#"><img src="img/icons/membres.png"><br><span>Membres</span></a></div>
+                <div class="menucase"><a href="projets.html"><img src="img/icons/projet.png"><br><span>Projets</span></a></div>
+                <div class="menucase"><a href="publications.html"><img src="img/icons/publication.png"><br><span>Publications</span></a></div>
+                <div class="menucase"><a href="partenaires.html"><img src="img/icons/partenaire.png"><br><span>Partenaires</span></a></div>
+                <div class="menucase">
+                    <div class="déroulant">
+                        <img src="img/icons/info.png"><br><span>Infos &<br> Contacts</span><br><img src="img/icons/bas.png">
+                        <div class="drop-contenu">
+                            <a href="contact.html">Contacts</a>
+                            <a href="plan_acces.html">Plan d'accès</a>
+                            <a href="offre_emploi.html">Offres d'emplois</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br><br><br><br>
+        <div class="container">
+            <h1>Formulaire de contact</h1>
+            <form action="/action_page.php">
+              <label for="fname">Nom & prénom</label>
+              <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+          
+              <label for="sujet">Sujet</label>
+              <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+          
+              <label for="emailAddress">Email</label>
+              <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+          
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+          
+              <input type="submit" value="Envoyer">
+            </form>
+          </div>
+
+          <footer>
+            <div class="pied">
+                <div class="casepied"><span>Campus de Nantes<br>33 Q AVENUE DU CHAMP DE<br> MANOEUVRE, </span><span class="phone">02 30 13 05 60</span></div>
+                <div class="casepied"><span>Campus de Rennes<br>2 RUE ROBERT D’ARBRISSEL,</span><br><span class="phone">02 30 13 02 50</span></div>
+                <div class="casepied"><span>Campus de Brest<br>20 RUE CUIRASSÉ BRETAGNE, </span><br><span class="phone">02 98 03 84 00</span></div>
+                <div class="casepied"><span>Campus de Caen 8<br>AVENUE CROIX GUÉRIN, </span><br><span class="phone">02 30 31 03 20</span></div>
+                <div class="casepied"><span>Yncrea Maroc<br>17 AVENUE DES NATIONS UNIES 10000<br>RABAT, </span><span class="phone">+212 05 37 63 67 97</span></div>
+            </div>
+            <hr class="separateur">
+            <div class="auteurs">
+                <div class="caseauteurs"><a href="https://www.instagram.com/timeo.mnd/"><span>MENARD Timéo</span><br><img src="img/icons/membres.png" class="auteursimg"></div></a>
+                <div class="caseauteurs"><a href="https://www.instagram.com/romain_lcbt/"><span>LECAILLON-BLOT Romain</span><br><img src="img/icons/membres.png" class="auteursimg"></div></a>
+                <div class="caseauteurs"><a href="https://www.instagram.com/madeg.lml/"><span>LE MOUEL Madeg</span><br><img src="img/icons/membres.png" class="auteursimg"></div></a>
+            </div>
+        </footer>
+    </body>
+</html>
